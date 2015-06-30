@@ -23,6 +23,7 @@ body {
   padding: 0;
   color: #fff;
   font-family: 'Quicksand';
+  font-weight: 300;
 }
 
 main {
@@ -74,10 +75,11 @@ section {
 /*Text tags*/
 
 h1 {
-  margin-left: 180px;
+  margin-left: 220px;
   font-weight: 300;
   line-height: 15px;
   font-size: 32px;
+  font-weight: 400;
 }
 
 h2 {
@@ -85,6 +87,7 @@ h2 {
   font-weight: 300;
   line-height: 5px;
   font-size: 32px;
+  font-weight: 400;
 }
 
 .time {
