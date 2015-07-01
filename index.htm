@@ -4,7 +4,7 @@
   <link rel='stylesheet' href='font/typicons.min.css'>
 </head>
 
-<body>
+<body onload="clock(); setInterval('clock()', 1000 )">
   <main>
 
   	<header>
@@ -13,18 +13,25 @@
 
   	<section>
   		<div class="left">
-  			<p class="time">9:59<span class="ampm">PM</span></p>
+  			<p id="time"></p>
   		</div>
   			
   		<div class="right">
-  			<p class="temp"><span class="typcn typcn-weather-cloudy"><span>77&deg;F</p>
+  			<p class="temp"><span class="typcn typcn-weather-cloudy"><span>90&deg;F</p>
   			<p class="weather">Cloudy</p>
   		</div>
 
-  		<div class="date">
-  			<h2>Mon, Jun 29, 2015</h2>
+  		<div class="datebar">
+  			<div class="date">
+  				<h2 id="fulldate"></h2>
+  			</div>
+  			<div class="alerts">
+  				<h2>No active alerts</h2>
+  			</div>
   		</div>
   	</section>
 
   </main>
+
+  <script type="text/javascript" src="dateandtime.js"></script>
 </body>

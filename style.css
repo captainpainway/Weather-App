@@ -54,22 +54,33 @@ section {
 }
 
 .left {
-  width: 45%;
+  width: 46%;
   float: left;
 }
 
 .right {
   width: 54%;
   float: left;
+  text-align: center;
 }
 
-.date {
+.datebar {
   width: 100%;
   float: left;
   height: 55px;
   margin-top: 15px;
   text-align: left;
-  background: linear-gradient(-45deg, rgba(0,0,0,0) 65%, rgba(50,150,200,0.8) 65%);
+  background: linear-gradient(-45deg, rgba(0,0,0,0.7) 65%, rgba(50,150,200,0.8) 65%);
+}
+
+.date {
+  width: 38%;
+  float: left;
+}
+
+.alerts {
+  width: 62%;
+  float: left;
 }
 
 /*Text tags*/
@@ -83,14 +94,14 @@ h1 {
 }
 
 h2 {
-  margin-left: 80px;
   font-weight: 300;
   line-height: 5px;
   font-size: 32px;
   font-weight: 400;
+  text-align: center;
 }
 
-.time {
+#time {
   font-size: 160px;
   font-weight: 300;
   line-height: 250px;
