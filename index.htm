@@ -2,9 +2,10 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel='stylesheet' href='font/typicons.min.css'>
+  <script type= "text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 
-<body onload="clock(); setInterval('clock()', 1000 )">
+<body>
   <main>
 
   	<header>
@@ -13,7 +14,7 @@
 
   	<section>
   		<div class="left">
-  			<p id="time"></p>
+  			<span id="time"></span><span id="ampm"></span>
   		</div>
   			
   		<div class="right">
@@ -22,7 +23,7 @@
   		</div>
 
   		<div class="datebar">
-  			<div class="date">
+  			<div id="date">
   				<h2 id="fulldate"></h2>
   			</div>
   			<div class="alerts">
@@ -33,5 +34,16 @@
 
   </main>
 
-  <script type="text/javascript" src="dateandtime.js"></script>
+<script type= "text/javascript">
+  $(document).ready(function() {
+    setInterval(function() {
+        $("#time").load("time.php");
+        $("#ampm").load("ampm.php");
+        $("#fulldate").load("date.php");
+    }, 1000);
+  });
+</script>
+
+
+  <!-- <script type="text/javascript" src="dateandtime.js"></script> -->
 </body>
