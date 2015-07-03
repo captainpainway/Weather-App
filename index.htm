@@ -1,49 +1,38 @@
 <!doctype HTML>
 <head>
+  <title>Orlando Time and Weather</title>
   <link rel="stylesheet" href="style.css">
-  <link rel='stylesheet' href='font/typicons.min.css'>
   <script type= "text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="datetimeweather.js"></script>
 </head>
 
 <body>
   <main>
 
-  	<header>
-  		<h1>Orlando, FL</h1>
-  	</header>
-
   	<section>
+
+      <header>
+        <h1>Orlando, FL</h1>
+      </header>
+
   		<div class="left">
   			<span id="time"></span><span id="ampm"></span>
   		</div>
   			
   		<div class="right">
-  			<p class="temp"><span class="typcn typcn-weather-cloudy"><span>90&deg;F</p>
-  			<p class="weather">Cloudy</p>
+  			<span id="temp"></span>
   		</div>
 
-  		<div class="datebar">
-  			<div id="date">
-  				<h2 id="fulldate"></h2>
-  			</div>
-  			<div class="alerts">
-  				<h2>No active alerts</h2>
-  			</div>
-  		</div>
+      <div class="datebar">
+        <div id="date">
+          <h2 id="fulldate"></h2>
+        </div>
+        <div id="status">
+        </div>
+      </div>
+
   	</section>
 
   </main>
 
-<script type= "text/javascript">
-  $(document).ready(function() {
-    setInterval(function() {
-        $("#time").load("time.php");
-        $("#ampm").load("ampm.php");
-        $("#fulldate").load("date.php");
-    }, 1000);
-  });
-</script>
-
-
-  <!-- <script type="text/javascript" src="dateandtime.js"></script> -->
 </body>
