@@ -1,5 +1,4 @@
 <?php
-  $time = date('g:i');
-  //$time = date('g:i', strtotime('+1 hour'));
+  $time = date('g:i', strtotime('+1 hour'));
   echo $time;
  ?>
